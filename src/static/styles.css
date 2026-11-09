@@ -74,6 +74,76 @@ section h3 {
   margin-bottom: 8px;
 }
 
+.activity-participants {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.activity-participants h5 {
+  margin-bottom: 6px;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.participant-list {
+  display: grid;
+  gap: 4px;
+  padding-left: 0;
+  list-style: none;
+  color: #4b5563;
+}
+
+.participant-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-width: 0;
+  padding: 2px 0;
+}
+
+.participant-list li span {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.remove-participant {
+  display: grid;
+  flex: none;
+  width: 30px;
+  height: 30px;
+  place-items: center;
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #666;
+}
+
+.remove-participant svg {
+  width: 16px;
+  height: 16px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.8;
+}
+
+.activity-participants .remove-participant:hover,
+.activity-participants .remove-participant:focus-visible {
+  border-color: #ef9a9a;
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.no-participants {
+  color: #666;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
 .form-group {
   margin-bottom: 15px;
 }
